@@ -37,30 +37,24 @@ export class ZebpayService {
   getZebBTC(): Observable<ZebpayClass>
   {
     return this.http.get<ZebpayClass>(this.varZebBtcUrl)
-        .pipe( 
-          catchError(this.errorHandler)
-        )
+ 
   };
 
 
 
-  errorHandler(error : HttpErrorResponse){
-    console.error("Hi Pavan :"+error.name);
-    return Observable(error.message || "Server Error");
- 
-  }
+
 
 
   getZebEth(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebEthUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebEthUrl);
   }
 
 
 
   getZebLtc(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebLtcUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebLtcUrl);
   }
 
 
@@ -70,7 +64,7 @@ export class ZebpayService {
 
   getZebXrp(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebXrpUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebXrpUrl);
   }
 
 
@@ -78,14 +72,14 @@ export class ZebpayService {
 
   getZebTrx(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebTrxUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebTrxUrl);
   }
 
   
 
   getZebOmg(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebOmgUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebOmgUrl);
   }
 
 
@@ -95,7 +89,7 @@ export class ZebpayService {
 
   getZebEos(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebEosUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebEosUrl) ;
   }
 
 
@@ -104,19 +98,19 @@ export class ZebpayService {
 
   getZebAe(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebAeUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebAeUrl) ;
   }
 
   getZebZrx(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebZrxUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebZrxUrl) ;
   }
 
 
 
   getZebGnt(): Observable<ZebpayClass>
   {
-    return this.http.get<ZebpayClass>(this.varZebGntUrl).pipe(catchError(this.errorHandler));
+    return this.http.get<ZebpayClass>(this.varZebGntUrl) ;
   }
 
 
