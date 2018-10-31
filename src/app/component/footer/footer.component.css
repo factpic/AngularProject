@@ -1,0 +1,21 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(85, 87, 90);
+    color: white;
+    text-align: center;
+ }
+
+
+
+header{
+   
+    font-size: 50px;
+    color: rgb(100, 241, 35);
+    
+    font-weight: 900;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
